@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@350;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+:root{
+    --blue-text: #abe6fd;
+    --dark-blue: #012986;
+    --mid-blue: #349dff;
+}
+
+html{
+    font-family: Roboto, Pacifico ;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* NAVBAR SEC */
+
+
+
+#moblie-nav{
+    display: none;
+}
+
+.nav-bar{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+.nav-bar:hover{
+    background-color: rgba(65, 65, 65, 0.466);
+    }
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 10%;
+    list-style: none;
+    height:10vh;
+    background-color:rgba(90,90,90,0.2); ;
+}
+li a{
+    display: block;
+    color:rgb(31, 31, 31);
+    text-decoration: none;
+    font-size:large;
+}
+
+#name{
+    color:rgb(255, 217, 0);
+    font-size: 30px;
+    font-weight: bold ;
+}
+
+/* MAIN SECTION */
+
+
+.container{
+    position:relative;
+    height: 100vh ;
+    width: auto;
+    overflow: hidden;
+}
+.image-container{
+    position:relative;
+    background-image: url(/images/akash4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+    animation: scale 20s;
+}
+@keyframes scale{
+    0% { 
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1) ;
+    }
+}
+.overlay{
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+background:  rgba(0,0,0,0.4);
+}
+
+.main-text{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    font: size 25px; 
+    color: rgba(255, 255, 255, 0.911);
+    text-transform: capitalize;
+    z-index: 2 ;
+}
+.fistWord{
+    color:rgba(255, 217, 0, 0.911);
+}
+.resume-cta{
+    border: 3px solid rgb(0, 0, 0);
+    width: 100px;
+    margin-top: 20px;
+    padding:10%;
+}
+.resume-cta:hover{
+    background-color: rgba(65, 65, 65, 0.466);
+    }
+    
+.resume-text{
+    color: rgb(255, 255, 255);
+}
+
+/*  projects  */
+
+
+.project-container{
+    width: 100%;
+    height: auto;
+}
+
+.project-header{
+
+    display: flex;
+    font-size:xx-large;
+    margin: 20px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 217, 0, 0.911);
+}
+
+.projects {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-flow: wrap;
+}
+ .office-project{
+    width: 350px;
+    height: 350px;
+    background: #f8f8f8;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url(/images/bernd-klutsch-nE2HV5AUXFo-unsplash.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.store-project{
+    width: 350px;
+    height: 350px;
+    background: #f8f8f8;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url(/images/headway-5QgIuuBxKwM-unsplash.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.sport-project{
+    width: 350px;
+    height: 350px;
+    background: #f8f8f8;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url(/images/jo-szczepanska-5aiRb5f464A-unsplash.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.text-container{
+    position: absolute;
+    height: 75px;
+    height: 75px;
+    width: 100%;
+    z-index: 2 ;
+    left: 0;
+    bottom: 0;
+    background-color:azure;
+    overflow: hidden;
+}
+.text-container:hover{
+    margin-top: 250px;
+}
+.name{
+    margin-top: 10px;
+    color:  rgba(255, 217, 0, 0.911);
+    font-size: 2rem;
+}
+.content{
+    padding: 25px 0;
+
+}
+
+/*  about me section  */
+
+
+.about-header{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    font-size:xx-large;
+    color: rgba(255, 217, 0, 0.911);
+    
+}
+.about-container{
+    margin: 50px;
+    width: 80%;
+    height:auto;
+    background-color: #f8f8f8;
+    box-shadow: -15px 7px 30px rgba(255, 217, 0, 0.45);
+}
+.about-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+} 
+.about-img{
+    height: 450px;
+    width: 350px;
+    background-image:url(/images/work.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.about-img:hover{
+    background-color: rgba(65, 65, 65, 0.466);
+    }
+
+.about-text{
+    height: auto;
+    width:40%;
+    font-size:medium;
+    margin-left: 100px;
+}
+
+/*  my skils section  */
+
+
+.myskill-header{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    font-size:xx-large;
+    color: rgba(255, 217, 0, 0.911);
+    
+}
+.myskill-container{
+    margin: 50px;
+    width: 80%;
+    height:auto;
+    background-color: #f8f8f8;
+    box-shadow: -15px 7px 30px rgba(255, 217, 0, 0.45);
+}
+.myskill-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+} 
+.myskill-img{
+    height: 250px;
+    width: 200px;
+    background-image: url(/images/laptop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.myskill-text{
+    height: auto;
+    width:40%;
+    font-size:medium;
+    margin-left: 100px;
+}
+/*Contact */
+
+.contact-header{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    font-size:xx-large;
+    color: rgba(255, 217, 0, 0.911);
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    width: 30%;
+    margin: 25% 35%;
+    padding-top: 30px;
+}
